@@ -29,6 +29,11 @@ Technically you will need :
 We have chosen to use Expo in this example of integration. This library is not essential. We wanted to simplifies the use of the camera.
 It is possible to eject the project in order to work on native projects.
 
+For futher integration support please refer to :
+
+- [idcheckio sdk-web documentation](https://sdkweb-test.idcheck.io/rest/api/index.html)
+- integration guide provided by your AriadNEXT contact. - our support email below
+
 ## Support
 
 Please contact [AriadNEXT IDCHECKIO support team](contact+sdkwebexample@idcheck.io) if you encounter any issue with your idcheckio sdk-web integration
