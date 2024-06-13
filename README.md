@@ -1,4 +1,4 @@
-# idcheckio-sdkweb-example-js
+# idcheckio-sdkweb-example-web-reactnative-expo
 
 ![image](https://www.ariadnext.com/wp-content/uploads/2019/01/idcheck.io-rvb.png)
 
@@ -14,15 +14,35 @@ Before started, please make sure you have been in contact with the [AriadNEXT te
 
 Technically you will need :
 
-- [NodeJS > v10.15](https://nodejs.org/en/download/)
+- [NodeJS > v20.11](https://nodejs.org/en/download/)
 - [Expo-cli](https://docs.expo.dev/)
 
-## Getting started
+This example use the [react-native-webview](https://www.npmjs.com/package/react-native-webview) component to open a link in a webview, as it is the recommended way to open webview. The same component can also be used when using React Native without Expo.
 
-1. With [npm](https://npmjs.org/) installed, run `npm install` or `yarn install` to install dependencies
-2. Then, you will need to create a link from IDCheckio web API.
-3. Edit App.js in order to setup your link in `WEBSDK_LINK`
-4. Run the following command to start the app in the development mode : `npm android`, `npm ios`
+**It is important to provide both** `allowsInlineMediaPlayback={true}` **and** `mediaPlaybackRequiresUserAction={false}` **to the webview component** to avoid issues such as the camera launching in fullscreen on iOS devices.
+
+## Run project
+
+1. Install dependencies
+
+   ```bash
+   npm install
+   ```
+
+2. Start the app
+
+   ```bash
+    npx expo start
+   ```
+
+In the output, you'll find options to open the app in a
+
+- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
+- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
+- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
+- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+
+You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
 
 ## Integration
 
